@@ -1,4 +1,4 @@
-ThisBuild / version := "-SNAPSHOT"
+ThisBuild / version := "1.0.0"
 ThisBuild / organization := "name.rayrobdod"
 ThisBuild / organizationHomepage := Some(new URL("http://rayrobdod.name/"))
 
