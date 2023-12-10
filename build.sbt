@@ -7,7 +7,7 @@ lazy val base = (project in file("."))
 		organization := "name.rayrobdod",
 		organizationHomepage := Some(url("http://rayrobdod.name/")),
 		homepage := Some(url("http://rayrobdod.name/programming/libraries/sbt/javafx/")),
-		licenses := List(License.CC0),
+		licenses := List("MIT-0" -> url("https://opensource.org/license/mit-0/")),
 		developers := List(
 			Developer(
 				"rayrobdod",
