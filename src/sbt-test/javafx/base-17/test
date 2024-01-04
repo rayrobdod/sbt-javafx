@@ -1,0 +1,2 @@
+> run
+# would fail if the classpath/modulepath did not include javafx-base

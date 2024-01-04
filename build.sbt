@@ -1,6 +1,7 @@
 ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
 
 lazy val base = (project in file("."))
+	.enablePlugins(SbtPlugin)
 	.settings(
 		sbtPlugin := true,
 		name := "sbt-javafx",
@@ -17,4 +18,6 @@ lazy val base = (project in file("."))
 			)
 		),
 		sonatypeRepository := "https://s01.oss.sonatype.org/service/local",
+		scriptedLaunchOpts ++= Seq("-Xmx1024M", "-Dplugin.version=" + version.value),
+		scriptedBufferLog := false,
 	)
